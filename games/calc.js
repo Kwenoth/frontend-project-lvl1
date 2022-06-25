@@ -5,7 +5,7 @@ const calc = () => {
 
   const calcLogic = () => {
     const arrZnak = ['+', '-', '*'];
-    const randomZnak = getRandomInt(0, arrZnak.length);
+    const randomZnak = getRandomInt(0, arrZnak.length - 1);
     const znak = arrZnak[randomZnak];
     const firstNum = getRandomInt(0, 100);
     const secondNum = getRandomInt(0, 100);
@@ -32,6 +32,7 @@ const calc = () => {
     };
 
     const gameQuestion = `${firstNum} ${znak} ${secondNum}`;
+    console.log(gameQuestion);
     const gameAnswer = doMath(firstNum, znak, secondNum).toString();
 
     return [gameQuestion, gameAnswer];
