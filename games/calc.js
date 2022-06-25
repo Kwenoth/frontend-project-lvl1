@@ -31,11 +31,12 @@ const calc = () => {
       return math;
     };
 
-    const gameQuestion = (`${firstNum} ${znak} ${secondNum}`);
+    const gameQuestion = `${firstNum} ${znak} ${secondNum}`;
     const gameAnswer = doMath(firstNum, znak, secondNum).toString();
 
     return [gameQuestion, gameAnswer];
   };
+
   commonLogic(rule, calcLogic);
 };
 

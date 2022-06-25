@@ -6,3 +6,5 @@
 <a href="https://asciinema.org/a/UUveEjp12zaGcPetTF45Zx4bz" target="_blank"><img src="https://asciinema.org/a/UUveEjp12zaGcPetTF45Zx4bz.svg" />Brain Games 1. Brain-even</a>
 
 <a href="https://asciinema.org/a/SbooNaVKYHO7DUNqnSfyXdeYM" target="_blank"><img src="https://asciinema.org/a/SbooNaVKYHO7DUNqnSfyXdeYM.svg" />Brain Games 2. Brain-calc</a>
+
+<a href="https://asciinema.org/a/uPIC7J57liFf8pmFmJFVYcMf5" target="_blank"><img src="https://asciinema.org/a/uPIC7J57liFf8pmFmJFVYcMf5.svg" />Brain Games 3. Brain-gcd</a>
