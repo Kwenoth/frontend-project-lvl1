@@ -5,10 +5,10 @@ const calc = () => {
 
   const calcLogic = () => {
     const arrZnak = ['+', '-', '*'];
-    const randomZnak = getRandomInt(arrZnak.length);
+    const randomZnak = getRandomInt(0, arrZnak.length);
     const znak = arrZnak[randomZnak];
-    const firstNum = getRandomInt(100);
-    const secondNum = getRandomInt(100);
+    const firstNum = getRandomInt(0, 100);
+    const secondNum = getRandomInt(0, 100);
 
     const doMath = (x, operator, y) => {
       let math = 0;

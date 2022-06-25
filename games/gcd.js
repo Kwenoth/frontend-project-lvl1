@@ -4,8 +4,8 @@ const gcd = () => {
   const rule = 'Find the greatest common divisor of given numbers.';
 
   const gcdLogic = () => {
-    const firstNum = getRandomInt(100);
-    const secondNum = getRandomInt(100);
+    const firstNum = getRandomInt(0, 100);
+    const secondNum = getRandomInt(0, 100);
     const gameQuestion = `${firstNum} ${secondNum}`;
 
     const getSmallestNum = (x, y) => {

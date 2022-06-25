@@ -8,3 +8,5 @@
 <a href="https://asciinema.org/a/SbooNaVKYHO7DUNqnSfyXdeYM" target="_blank"><img src="https://asciinema.org/a/SbooNaVKYHO7DUNqnSfyXdeYM.svg" />Brain Games 2. Brain-calc</a>
 
 <a href="https://asciinema.org/a/uPIC7J57liFf8pmFmJFVYcMf5" target="_blank"><img src="https://asciinema.org/a/uPIC7J57liFf8pmFmJFVYcMf5.svg" />Brain Games 3. Brain-gcd</a>
+
+<a href="https://asciinema.org/a/504159" target="_blank"><img src="https://asciinema.org/a/504159.svg" />Brain Games 4. Brain-progression</a>
