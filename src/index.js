@@ -16,7 +16,7 @@ export const commonLogic = (gameRule, gameLogic) => {
 
   for (let i = 0; i < 3; i += 1) {
     const questAndAns = gameLogic();
-    console.log('Question: ', questAndAns[0]);
+    console.log(`Question: ${questAndAns[0]}`);
     const userAnswer = readlineSync.question('Your answer: ');
     const correctAnswer = questAndAns[1];
 
