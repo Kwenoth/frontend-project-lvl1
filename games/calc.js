@@ -1,7 +1,7 @@
 import { commonLogic, getRandomInt } from '../src/index.js';
 
 const calc = () => {
-  const gameId = 2;
+  const rule = 'What is the result of the expression?';
 
   const calcLogic = () => {
     const arrZnak = ['+', '-', '*'];
@@ -36,7 +36,7 @@ const calc = () => {
 
     return [gameQuestion, gameAnswer];
   };
-  commonLogic(gameId, calcLogic());
+  commonLogic(rule, calcLogic);
 };
 
 export default calc;

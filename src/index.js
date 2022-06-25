@@ -1,19 +1,17 @@
 import readlineSync from 'readline-sync';
-import { cons, car, cdr } from '@hexlet/pairs';
 
 export const getRandomInt = (max) => Math.floor(Math.random() * max);
 
-export const commonLogic = (gameId, gameLogic) => {
+export const commonLogic = (gameRule, gameLogic) => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  const gameRule = cons('Answer "yes" if the number is even, otherwise answer "no".', 'What is the result of the expression?');
-  console.log(gameId === 1 ? car(gameRule) : cdr(gameRule));
+  console.log(gameRule);
 
   let count = 0;
 
   for (let i = 0; i < 3; i += 1) {
-    const questAndAns = gameLogic;
+    const questAndAns = gameLogic();
     console.log('Question: ', questAndAns[0]);
     const userAnswer = readlineSync.question('Your answer: ');
     const correctAnswer = questAndAns[1];

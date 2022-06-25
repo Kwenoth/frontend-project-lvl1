@@ -1,13 +1,13 @@
 import { commonLogic, getRandomInt } from '../src/index.js';
 
-const gameId = 1;
+const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const randomNumber = () => {
+export const evenLogic = () => {
   const gameQuestion = getRandomInt(100);
   const gameAnswer = gameQuestion % 2 === 0 ? 'yes' : 'no';
   return [gameQuestion, gameAnswer];
 };
 
-const isEven = () => commonLogic(gameId, randomNumber());
+const isEven = () => commonLogic(rule, evenLogic);
 
 export default isEven;
