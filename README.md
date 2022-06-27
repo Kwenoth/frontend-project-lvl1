@@ -1,14 +1,54 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Kwenoth/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Kwenoth/frontend-project-lvl1/actions)
 
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+<a href="https://codeclimate.com/github/Kwenoth/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/99a813ab8c6d20a33b47/maintainability" /></a>
 
-<a href="https://asciinema.org/a/UUveEjp12zaGcPetTF45Zx4bz" target="_blank"><img src="https://asciinema.org/a/UUveEjp12zaGcPetTF45Zx4bz.svg" />Brain Games 1. Brain-even</a>
+# Brain Games
 
-<a href="https://asciinema.org/a/SbooNaVKYHO7DUNqnSfyXdeYM" target="_blank"><img src="https://asciinema.org/a/SbooNaVKYHO7DUNqnSfyXdeYM.svg" />Brain Games 2. Brain-calc</a>
+## Setup
 
-<a href="https://asciinema.org/a/uPIC7J57liFf8pmFmJFVYcMf5" target="_blank"><img src="https://asciinema.org/a/uPIC7J57liFf8pmFmJFVYcMf5.svg" />Brain Games 3. Brain-gcd</a>
+```sh
+make install
+```
 
-<a href="https://asciinema.org/a/504159" target="_blank"><img src="https://asciinema.org/a/504159.svg" />Brain Games 4. Brain-progression</a>
+# Run games
 
-<a href="https://asciinema.org/a/504173" target="_blank"><img src="https://asciinema.org/a/504173.svg" />Brain Games 5. Brain-prime</a>
+## Game 1. Parity check
+
+```sh
+make brain-even
+```
+
+## Game 2. Calculator
+
+```sh
+make brain-calc
+```
+
+## Game 3. Greatest common divisor
+
+```sh
+make brain-gcd
+```
+
+## Game 4. Arithmetic progression
+
+```sh
+make brain-progression
+```
+
+## Game 5. Is it a prime number?
+
+```sh
+make brain-prime
+```
+
+<a href="https://asciinema.org/a/UUveEjp12zaGcPetTF45Zx4bz" target="_blank">Game 1. Parity check<img src="https://asciinema.org/a/UUveEjp12zaGcPetTF45Zx4bz.svg" /></a>
+
+<a href="https://asciinema.org/a/SbooNaVKYHO7DUNqnSfyXdeYM" target="_blank">Game 2. Calculator<img src="https://asciinema.org/a/SbooNaVKYHO7DUNqnSfyXdeYM.svg" /></a>
+
+<a href="https://asciinema.org/a/uPIC7J57liFf8pmFmJFVYcMf5" target="_blank">Game 3. Greatest common divisor<img src="https://asciinema.org/a/uPIC7J57liFf8pmFmJFVYcMf5.svg" /></a>
+
+<a href="https://asciinema.org/a/504159" target="_blank">Game 4. Arithmetic progression<img src="https://asciinema.org/a/504159.svg" /></a>
+
+<a href="https://asciinema.org/a/504173" target="_blank">Game 5. Is it a prime number?<img src="https://asciinema.org/a/504173.svg" /></a>
