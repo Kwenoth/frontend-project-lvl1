@@ -16,9 +16,7 @@ const isPrimeNum = (num) => {
 };
 
 const primeLogic = () => {
-  const rangeStart = -999;
-  const rangeEnd = 999;
-  const gameQuestion = getRandomInt(rangeStart, rangeEnd);
+  const gameQuestion = getRandomInt(-999, 999);
   const gameAnswer = isPrimeNum(gameQuestion) ? 'yes' : 'no';
 
   return [gameQuestion, gameAnswer];
