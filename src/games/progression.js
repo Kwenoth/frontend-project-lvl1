@@ -1,6 +1,8 @@
 import commonLogic from '../index.js';
 import getRandomInt from '../get-random-Int.js';
 
+const rule = 'What number is missing in the progression?';
+
 const getCollOfNums = (start, weight, step) => {
   const coll = [];
   coll.push(start);
@@ -42,10 +44,6 @@ const progressionLogic = () => {
   return [gameQuestion, gameAnswer];
 };
 
-const progression = () => {
-  const rule = 'What number is missing in the progression?';
-
-  commonLogic(rule, progressionLogic);
-};
+const progression = () => commonLogic(rule, progressionLogic);
 
 export default progression;

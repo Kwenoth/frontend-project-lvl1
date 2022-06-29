@@ -1,6 +1,8 @@
 import commonLogic from '../index.js';
 import getRandomInt from '../get-random-Int.js';
 
+const rule = 'Find the greatest common divisor of given numbers.';
+
 const getSmallestNum = (x, y) => {
   if (x < y) {
     return x;
@@ -28,10 +30,6 @@ const gcdLogic = () => {
   return [gameQuestion, gameAnswer];
 };
 
-const gcd = () => {
-  const rule = 'Find the greatest common divisor of given numbers.';
-
-  commonLogic(rule, gcdLogic);
-};
+const gcd = () => commonLogic(rule, gcdLogic);
 
 export default gcd;

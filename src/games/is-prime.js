@@ -1,6 +1,8 @@
 import commonLogic from '../index.js';
 import getRandomInt from '../get-random-Int.js';
 
+const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 const isPrimeNum = (num) => {
   if (num < 2) {
     return false;
@@ -22,10 +24,6 @@ const primeLogic = () => {
   return [gameQuestion, gameAnswer];
 };
 
-const isPrime = () => {
-  const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
-  commonLogic(rule, primeLogic);
-};
+const isPrime = () => commonLogic(rule, primeLogic);
 
 export default isPrime;
