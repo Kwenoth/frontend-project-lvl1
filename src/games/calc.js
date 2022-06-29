@@ -2,24 +2,19 @@ import commonLogic from '../index.js';
 import getRandomInt from '../get-random-Int.js';
 
 const doMath = (x, operator, y) => {
-  let math = 0;
   switch (operator) {
     case '+':
-      math = x + y;
-      break;
+      return x + y;
 
     case '-':
-      math = x - y;
-      break;
+      return x - y;
 
     case '*':
-      math = x * y;
-      break;
+      return x * y;
 
     default:
-      math = NaN;
+      return NaN;
   }
-  return math;
 };
 
 const calcLogic = () => {
