@@ -1,5 +1,5 @@
-import commonLogic from '../src/index.js';
-import getRandomInt from '../src/get-random-Int.js';
+import commonLogic from '../index.js';
+import getRandomInt from '../get-random-Int.js';
 
 const getSmallestNum = (x, y) => {
   if (x < y) {
