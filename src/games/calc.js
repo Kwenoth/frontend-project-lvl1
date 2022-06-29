@@ -1,6 +1,9 @@
 import commonLogic from '../index.js';
 import getRandomInt from '../get-random-Int.js';
 
+const rule = 'What is the result of the expression?';
+const arrZnak = ['+', '-', '*'];
+
 const doMath = (x, operator, y) => {
   switch (operator) {
     case '+':
@@ -18,7 +21,6 @@ const doMath = (x, operator, y) => {
 };
 
 const calcLogic = () => {
-  const arrZnak = ['+', '-', '*'];
   const randomZnak = getRandomInt(0, arrZnak.length - 1);
   const znak = arrZnak[randomZnak];
   const firstNum = getRandomInt(0, 100);
@@ -29,10 +31,6 @@ const calcLogic = () => {
   return [gameQuestion, gameAnswer];
 };
 
-const calc = () => {
-  const rule = 'What is the result of the expression?';
-
-  commonLogic(rule, calcLogic);
-};
+const calc = () => commonLogic(rule, calcLogic);
 
 export default calc;
