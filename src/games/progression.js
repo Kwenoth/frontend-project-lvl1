@@ -3,43 +3,31 @@ import getRandomInt from '../get-random-Int.js';
 
 const rule = 'What number is missing in the progression?';
 
-const getCollOfNums = (start, weight, step) => {
+const getCollOfNums = (start, weight, step, index) => {
   const coll = [];
-  coll.push(start);
-
-  for (let i = 1; i < weight; i += 1) {
-    coll.push(i * step + start);
-  }
-
-  return coll;
-};
-
-const getCollWithHiddenNum = (arr, index) => {
-  const coll = [];
-
-  for (let i = 0; i < arr.length; i += 1) {
+  let elementValue;
+  for (let i = 0; i < weight; i += 1) {
     if (i === index) {
       coll.push('..');
+      elementValue = i * step + start;
     } else {
-      coll.push(arr[i]);
+      coll.push(i * step + start);
     }
   }
 
-  return coll;
+  return [coll, elementValue];
 };
 
 const progressionLogic = () => {
   const collWeight = getRandomInt(5, 10);
   const startNum = getRandomInt(0, 100);
   const stepOfNums = getRandomInt(1, 5);
-  const randomElement = getRandomInt(0, collWeight - 1);
+  const randomIndex = getRandomInt(0, collWeight - 1);
 
-  const collOfNums = getCollOfNums(startNum, collWeight, stepOfNums);
+  const collOfNums = getCollOfNums(startNum, collWeight, stepOfNums, randomIndex);
 
-  const collWithHiddenNum = getCollWithHiddenNum(collOfNums, randomElement);
-
-  const gameQuestion = collWithHiddenNum.join(' ');
-  const gameAnswer = collOfNums[randomElement].toString();
+  const gameQuestion = collOfNums[0].join(' ');
+  const gameAnswer = collOfNums[1].toString();
 
   return [gameQuestion, gameAnswer];
 };
