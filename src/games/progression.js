@@ -8,7 +8,7 @@ const getCollOfNums = (start, weight, step) => {
   coll.push(start);
 
   for (let i = 1; i < weight; i += 1) {
-    coll.push(coll[i - 1] + step);
+    coll.push(i * step + start);
   }
 
   return coll;
@@ -30,11 +30,11 @@ const getCollWithHiddenNum = (arr, index) => {
 
 const progressionLogic = () => {
   const collWeight = getRandomInt(5, 10);
-  const stepOfNums = getRandomInt(1, 5);
   const startNum = getRandomInt(0, 100);
+  const stepOfNums = getRandomInt(1, 5);
+  const randomElement = getRandomInt(0, collWeight - 1);
 
   const collOfNums = getCollOfNums(startNum, collWeight, stepOfNums);
-  const randomElement = getRandomInt(0, collOfNums.length - 1);
 
   const collWithHiddenNum = getCollWithHiddenNum(collOfNums, randomElement);
 
