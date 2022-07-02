@@ -25,10 +25,10 @@ const progressionLogic = () => {
 
   const progression = generateProgression(startNum, progressionLength, step, randomIndex);
 
-  const gameQuestion = progression.join(' ');
-  const gameAnswer = answer.toString();
+  const roundQuestion = progression.join(' ');
+  const roundAnswer = answer.toString();
 
-  return [gameQuestion, gameAnswer];
+  return [roundQuestion, roundAnswer];
 };
 
 const progressionGame = () => gameEngine(rule, progressionLogic);

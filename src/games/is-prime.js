@@ -16,10 +16,10 @@ const isPrime = (num) => {
 };
 
 const primeLogic = () => {
-  const gameQuestion = getRandomInt(-999, 999);
-  const gameAnswer = isPrime(gameQuestion) ? 'yes' : 'no';
+  const roundQuestion = getRandomInt(-999, 999);
+  const roundAnswer = isPrime(roundQuestion) ? 'yes' : 'no';
 
-  return [gameQuestion, gameAnswer];
+  return [roundQuestion, roundAnswer];
 };
 
 const isPrimeGame = () => gameEngine(rule, primeLogic);

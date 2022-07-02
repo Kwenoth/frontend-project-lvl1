@@ -6,10 +6,10 @@ const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
 const isEvenNum = (num) => num % 2 === 0;
 
 const evenLogic = () => {
-  const gameQuestion = getRandomInt(0, 100);
-  const gameAnswer = isEvenNum(gameQuestion) ? 'yes' : 'no';
+  const roundQuestion = getRandomInt(0, 100);
+  const roundAnswer = isEvenNum(roundQuestion) ? 'yes' : 'no';
 
-  return [gameQuestion, gameAnswer];
+  return [roundQuestion, roundAnswer];
 };
 
 const isEvenGame = () => gameEngine(rule, evenLogic);
