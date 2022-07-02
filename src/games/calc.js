@@ -1,4 +1,4 @@
-import commonLogic from '../index.js';
+import gameEngine from '../index.js';
 import getRandomInt from '../get-random-Int.js';
 
 const rule = 'What is the result of the expression?';
@@ -28,6 +28,6 @@ const calcLogic = () => {
   return [gameQuestion, gameAnswer];
 };
 
-const calc = () => commonLogic(rule, calcLogic);
+const calc = () => gameEngine(rule, calcLogic);
 
 export default calc;

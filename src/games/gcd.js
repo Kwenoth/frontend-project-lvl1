@@ -1,4 +1,4 @@
-import commonLogic from '../index.js';
+import gameEngine from '../index.js';
 import getRandomInt from '../get-random-Int.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
@@ -16,6 +16,6 @@ const gcdLogic = () => {
   return [gameQuestion, gameAnswer];
 };
 
-const gcd = () => commonLogic(rule, gcdLogic);
+const gcd = () => gameEngine(rule, gcdLogic);
 
 export default gcd;

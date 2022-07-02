@@ -1,4 +1,4 @@
-import commonLogic from '../index.js';
+import gameEngine from '../index.js';
 import getRandomInt from '../get-random-Int.js';
 
 const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -17,6 +17,6 @@ const evenLogic = () => {
   return [gameQuestion, gameAnswer];
 };
 
-const isEven = () => commonLogic(rule, evenLogic);
+const isEven = () => gameEngine(rule, evenLogic);
 
 export default isEven;
