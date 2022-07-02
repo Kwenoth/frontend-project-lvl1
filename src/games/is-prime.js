@@ -22,6 +22,6 @@ const primeLogic = () => {
   return [gameQuestion, gameAnswer];
 };
 
-const isPrime = () => gameEngine(rule, primeLogic);
+const primeGame = () => gameEngine(rule, primeLogic);
 
-export default isPrime;
+export default primeGame;
