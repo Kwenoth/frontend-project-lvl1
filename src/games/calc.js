@@ -4,7 +4,7 @@ import getRandomInt from '../get-random-Int.js';
 const rule = 'What is the result of the expression?';
 const arrZnak = ['+', '-', '*'];
 
-const doMath = (x, operator, y) => {
+const doCalculation = (x, operator, y) => {
   switch (operator) {
     case '+':
       return x + y;
@@ -26,7 +26,7 @@ const calcLogic = () => {
   const firstNum = getRandomInt(0, 100);
   const secondNum = getRandomInt(0, 100);
   const gameQuestion = `${firstNum} ${znak} ${secondNum}`;
-  const gameAnswer = doMath(firstNum, znak, secondNum).toString();
+  const gameAnswer = doCalculation(firstNum, znak, secondNum).toString();
 
   return [gameQuestion, gameAnswer];
 };
