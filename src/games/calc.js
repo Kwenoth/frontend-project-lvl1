@@ -28,6 +28,6 @@ const calcLogic = () => {
   return [gameQuestion, gameAnswer];
 };
 
-const calc = () => gameEngine(rule, calcLogic);
+const calcGame = () => gameEngine(rule, calcLogic);
 
-export default calc;
+export default calcGame;
