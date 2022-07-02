@@ -17,15 +17,15 @@ const generateProgression = (start, weight, step, index) => {
 };
 
 const progressionLogic = () => {
-  const collWeight = getRandomInt(5, 10);
+  const progressionLength = getRandomInt(5, 10);
   const startNum = getRandomInt(0, 100);
-  const stepOfNums = getRandomInt(1, 5);
-  const randomIndex = getRandomInt(0, collWeight - 1);
-  const answer = randomIndex * stepOfNums + startNum;
+  const step = getRandomInt(1, 5);
+  const randomIndex = getRandomInt(0, progressionLength - 1);
+  const answer = randomIndex * step + startNum;
 
-  const collOfNums = generateProgression(startNum, collWeight, stepOfNums, randomIndex);
+  const progression = generateProgression(startNum, progressionLength, step, randomIndex);
 
-  const gameQuestion = collOfNums.join(' ');
+  const gameQuestion = progression.join(' ');
   const gameAnswer = answer.toString();
 
   return [gameQuestion, gameAnswer];
