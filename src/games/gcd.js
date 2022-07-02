@@ -16,6 +16,6 @@ const gcdLogic = () => {
   return [gameQuestion, gameAnswer];
 };
 
-const gcd = () => gameEngine(rule, gcdLogic);
+const gcdGame = () => gameEngine(rule, gcdLogic);
 
-export default gcd;
+export default gcdGame;

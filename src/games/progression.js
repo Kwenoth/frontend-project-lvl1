@@ -31,6 +31,6 @@ const progressionLogic = () => {
   return [gameQuestion, gameAnswer];
 };
 
-const progression = () => gameEngine(rule, progressionLogic);
+const progressionGame = () => gameEngine(rule, progressionLogic);
 
-export default progression;
+export default progressionGame;

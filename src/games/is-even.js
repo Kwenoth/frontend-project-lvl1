@@ -12,6 +12,6 @@ const evenLogic = () => {
   return [gameQuestion, gameAnswer];
 };
 
-const isEven = () => gameEngine(rule, evenLogic);
+const isEvenGame = () => gameEngine(rule, evenLogic);
 
-export default isEven;
+export default isEvenGame;
