@@ -3,9 +3,9 @@ import getRandomInt from '../get-random-int.js';
 
 const rule = 'What number is missing in the progression?';
 
-const generateProgression = (start, weight, step, index) => {
+const generateProgression = (start, length, step, index) => {
   const coll = [];
-  for (let i = 0; i < weight; i += 1) {
+  for (let i = 0; i < length; i += 1) {
     if (i === index) {
       coll.push('..');
     } else {
