@@ -1,5 +1,5 @@
 import gameEngine from '../index.js';
-import getRandomInt from '../get-random-Int.js';
+import getRandomInt from '../get-random-int.js';
 
 const rule = 'What number is missing in the progression?';
 
