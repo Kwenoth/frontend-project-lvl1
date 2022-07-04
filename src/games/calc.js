@@ -22,10 +22,10 @@ const calcLogic = () => {
   const operand = operands[randomOperand];
   const firstNum = getRandomInt(0, 100);
   const secondNum = getRandomInt(0, 100);
-  const roundQuestion = `${firstNum} ${operand} ${secondNum}`;
-  const roundAnswer = doCalculation(firstNum, operand, secondNum).toString();
+  const question = `${firstNum} ${operand} ${secondNum}`;
+  const answer = doCalculation(firstNum, operand, secondNum).toString();
 
-  return [roundQuestion, roundAnswer];
+  return [question, answer];
 };
 
 const calcGame = () => gameEngine(rule, calcLogic);

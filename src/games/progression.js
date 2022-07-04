@@ -21,14 +21,14 @@ const progressionLogic = () => {
   const startNum = getRandomInt(0, 100);
   const step = getRandomInt(1, 5);
   const randomIndex = getRandomInt(0, progressionLength - 1);
-  const answer = randomIndex * step + startNum;
+  const calcAnswer = randomIndex * step + startNum;
 
   const progression = generateProgression(startNum, progressionLength, step, randomIndex);
 
-  const roundQuestion = progression.join(' ');
-  const roundAnswer = answer.toString();
+  const question = progression.join(' ');
+  const answer = calcAnswer.toString();
 
-  return [roundQuestion, roundAnswer];
+  return [question, answer];
 };
 
 const progressionGame = () => gameEngine(rule, progressionLogic);

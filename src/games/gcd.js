@@ -8,12 +8,12 @@ const findGCD = (x, y) => (x !== 0 ? findGCD(y % x, x) : y);
 const gcdLogic = () => {
   const firstNum = getRandomInt(0, 100);
   const secondNum = getRandomInt(0, 100);
-  const roundQuestion = `${firstNum} ${secondNum}`;
+  const question = `${firstNum} ${secondNum}`;
   const smallestDivisor = findGCD(firstNum, secondNum);
 
-  const roundAnswer = smallestDivisor.toString();
+  const answer = smallestDivisor.toString();
 
-  return [roundQuestion, roundAnswer];
+  return [question, answer];
 };
 
 const gcdGame = () => gameEngine(rule, gcdLogic);
