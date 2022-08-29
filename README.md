@@ -5,7 +5,7 @@
 
 # Brain Games
 
-"Mind Games" is a set of five console games based on the popular mobile brain-pumping apps. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered completed. Incorrect answers end the game and prompt you to play it again. Games:
+"Brain Games" is a set of five console games based on the popular mobile brain-pumping apps. Each game asks questions that need to be answered correctly. After three correct answers, the game is considered completed. Incorrect answers end the game and prompt you to play it again. Games:
 
 Calculator. Arithmetic expressions to be calculated.
 Progression. Finding missing numbers in a sequence of numbers.
