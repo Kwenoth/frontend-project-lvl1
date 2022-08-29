@@ -13,8 +13,6 @@ Determining an even number.
 Determining the largest common divisor.
 Determining a prime number.
 
-Translated with www.DeepL.com/Translator (free version)
-
 ## Install
 
 ```sh
